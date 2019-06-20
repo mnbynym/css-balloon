@@ -1,0 +1,59 @@
+/*********************************************/
+/*Common setting*/
+.balloon {
+    position: relative;
+    padding: 40px;
+    border-radius: 10px;
+    color: #ffffff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.balloon::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    top: 20px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+}
+
+.icon {
+    position: absolute;
+    top: 0;
+}
+/*********************************************/
+
+/********************************************/
+/*Left balloon*/
+.left {
+    background-color: #4db6ac;
+    margin-left: 110px;
+}
+
+.left .icon {
+    left: -120px;   
+}
+
+.left::before {
+    left: -15px;
+    border-right: 15px solid #4db6ac;
+}
+
+/********************************************/
+/*Right balloon*/
+.right{
+    background-color: #ff80ab;
+    margin-right: 110px;
+}
+
+.right .icon{
+    right: -120px;
+}
+
+.right::before{
+    right: -15px;
+    border-left: 15px solid #ff80ab;
+}
